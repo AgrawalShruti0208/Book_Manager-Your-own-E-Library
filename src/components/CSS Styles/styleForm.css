@@ -1,0 +1,158 @@
+@import "rsuite/dist/rsuite.css";
+
+
+.custom-slider {
+    margin-top: 18px;
+  
+    .rs-slider-handle {
+      top: -6px;
+      width: 500px;
+      background-color: #3498ff;
+      text-align: center;
+      padding: 3px;
+      margin-left: -16px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 0 8px rgb(52 152 255 / 25%);
+
+      }
+  
+      &::before {
+        display: none;
+      }
+    }
+  
+    &.rs-slider-dragging .rs-slider-handle,
+    &.rs-slider-dragging .rs-slider-handle:hover {
+      box-shadow: none;
+      transform: scale(1.2);
+      
+    }
+    .rs-slider-bar{
+        height: 10px;
+        
+    }
+  }
+
+  .AddBookDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .animatedHeading{
+    padding: 0;
+    margin: 0px;
+    background-color: #000!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  
+  
+  .animatedHeading h1 {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px!important;
+    font-weight: bold!important;
+    font-family: monospace;
+    letter-spacing: 7px!important;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .animatedHeading h1 {
+    padding: 64px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
+
+  .AddBookForm{
+    border: 5px solid black;
+    padding: 20px 10px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    position: relative;
+  }
+
+  .AddBookForm textarea{
+    width: 600px;
+    resize: vertical;
+  }
+
+  .AddBookForm .FormHeadings{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+  }
+
+  #submitBtn{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  }
+
+  input[type="text"] {
+    border-radius: 5px;
+    width: 440px;
+  }
+
+  select{
+    background-color: black;
+    color: white;
+    width: 200px;
+  }
+
+  input,select,textarea{
+    border: 3px solid gray;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 700;
+  }
+
+  option{
+    font-style: italic;
+    font-weight: 800;
+  }
+
+  .BookID{
+    background-color: rgba(140, 140, 140, 0.718);
+    font-size: 30px;
+    font-weight: 900;
+    
+  }
+  .Error{
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+    position: absolute;
+    right: 20px;
+    bottom: 340px;
+  }

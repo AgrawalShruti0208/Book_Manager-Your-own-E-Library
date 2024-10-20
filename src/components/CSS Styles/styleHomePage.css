@@ -1,0 +1,124 @@
+.HomePageDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BookCardsList{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.HomePageDiv h1{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.FormDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.FormDiv form fieldset{
+    width: 500px;
+    border: 4px solid gray;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.FormDiv form fieldset legend{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.FormDiv form input{
+    font-size:1.6rem;
+    font-weight: 600;
+    width: 90%;
+}
+
+.FormDiv form button{
+    font-size: 1.5rem;
+    width: 400px;
+    line-height: 2;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+}
+
+
+.FormDiv form button:hover, .FormDiv form button:active{
+    background-color: rgb(35, 32, 32);
+}
+
+.FormDiv .error{
+    position:absolute;
+    color: red;
+    font-size: large;
+    font-weight: 600;
+    left: 0;
+    margin-bottom: 50px;
+}
+
+.HomePageDiv .UserName{
+    color: blue;
+    line-height: 2;
+    text-decoration: underline 7px solid black;
+    font-weight: 900;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+
+  background: rgb(4, 1, 62);
+  background: linear-gradient(
+    225deg, rgb(3, 1, 45) 0%,
+     rgba(9,9,121,1) 35%,
+      rgb(0, 166, 255) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+      font-weight: bolder;
+      margin-top: 10px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.Textseperator{
+    color: white;
+    text-decoration: solid 4px underline gray;
+    padding-left: 8px;
+}
+
+.PopularBooks{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px 20px;
+    padding-bottom: 0px;
+}

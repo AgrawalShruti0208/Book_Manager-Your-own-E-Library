@@ -1,0 +1,102 @@
+#root {
+  max-width: 98vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customBtn {
+  appearance: none;
+  background-color: #000000;
+  border : 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  letter-spacing: 3px;
+}
+
+
+.customBtn:hover {
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.customBtn:active {
+box-shadow: none;
+transform: translateY(0);
+}
+
+.ErrorPageDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 100px;
+  border: 3px solid red;
+  margin: 100px auto;
+}
+
+.ErrorHeading{
+  padding: 0;
+  margin: 0px;
+  background-color: red!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+
+.ErrorHeading h1 {
+  color: hsl(0, 0%, 82%);
+  font-size: 50px!important;
+  font-weight: bold!important;
+  font-family: monospace;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.ErrorHeading h1 {
+  padding: 64px;
+  background: linear-gradient(to right, hsl(0, 51%, 49%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 75%, 40%) 20%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+

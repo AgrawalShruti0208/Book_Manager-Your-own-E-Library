@@ -1,0 +1,145 @@
+
+.Book-card{
+    display: flex;
+    gap:20px;
+    padding:10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 500px;
+    
+}
+.BookDetails-card{
+    display: flex;
+    gap:20px;
+    padding:10px;
+    border: 3px solid black;
+    margin: 10px;
+    width: 900px; 
+    height: 440px;
+
+}
+.Details{
+    position: relative;
+    width: 70%;
+}
+.Book-card:hover{
+    transform: scale(1.1);
+}
+
+.Book-card h2{
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.Book_description{
+    font-size: 1.2rem;
+    padding-top: 40px;
+    color: rgb(2, 2, 2);
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;   
+}
+.BookDetails_description{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 40px;
+    color: rgb(2, 2, 2);
+   
+}
+.BookDetails{
+    position: relative;
+    width: 50%;
+}
+
+.BookCardFirstHalf{
+    width: 50%;
+}
+.BookAuthor{
+    margin-top:-3px;
+    margin-bottom:10px;
+}
+.viewDetails{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.Btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.BookRating{
+    position: absolute;
+    right: 20px;
+}
+
+.PopularBooks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+
+}
+
+.newTag{
+     background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.BookDetailsPage{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 30px;
+
+}
+
+.backArrow{
+    border-radius: 30px;
+}
+
+.backArrow:hover{
+    box-shadow: rgba(4, 4, 4, 0.603) 0 8px 15px;
+    transform: translateY(-2px);
+    
+}
+
+.BookDetails_Category{
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.Details_CR{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
